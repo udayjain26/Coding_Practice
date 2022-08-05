@@ -31,7 +31,6 @@ class Solution:
                 curr = curr.next
                 l2 = l2.next
             else:
-                print(carry, l1Val, l2Val)
                 if (carry + l1Val + l2Val) < 10:
                     curr.next = ListNode(carry + l1Val + l2Val)
                     carry = 0
